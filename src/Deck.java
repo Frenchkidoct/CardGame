@@ -5,15 +5,9 @@ public class Deck {
     private int cardsLeft;
 
     //array for cards
-    private ArrayList<Card> cards;
-    private ArrayList<Card> ranks;
-    private ArrayList<Card> suit;
-    private ArrayList<Card> pi;
+   // private ArrayList<Card> deck = new ArrayList<cards>;
 
-//hello
-
-    public Deck(){
-
+    public Deck(String [] ranks, String [] suits, String [] points ){
     }
 
 }
