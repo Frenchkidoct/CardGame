@@ -45,8 +45,30 @@ public class Deck
         }
         else
         {
+            cardsLeft--;
+            return deck.get(cardsLeft);
+        }
+    }
+    public void shuffle()
+    {
+        int currentIndex = deck.size();
+        currentIndex--;
+        for(int i = 0; i < deck.size(); i++)
+        {
+            //generate int from 0 to current index
+            int index = (int)(Math.random()*(currentIndex + 1));
+
+            Card currentCard = deck.get(currentIndex);
+            Card swapCard = deck.get(index);
+
+            deck.set(currentIndex, swapCard);
+            deck.set(index, currentCard);
+            currentIndex--;
 
         }
+        //three steps in swapping
+        // create a temporary placeholder.
+
     }
 
 }
